@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Virtual Mouse | Touchless Control</title>
+    <style>
+        /* --- CSS STYLING --- */
+        :root {
+            --primary: #6C63FF;
+            --dark: #1a1a2e;
+            --light: #f5f5f5;
+            --accent: #e94560;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #16213e, #1a1a2e);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background-color: #ff2e63;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: #16213e;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        code {
+            background: #0f3460;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #ff9a9e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #0f3460;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AI Virtual Mouse</h1>
+        <p class="subtitle">Control your computer with simple hand gestures using Python, OpenCV, and MediaPipe.</p>
+        <a href="https://github.com/YOUR_USERNAME/virtual-mouse" class="btn">View on GitHub</a>
+    </header>
+
+    <div class="container">
+        <h2>How It Works</h2>
+        <p>This project uses Artificial Intelligence to track hand landmarks in real-time. By calculating the distance between your Index finger and Thumb, the system determines whether to move the cursor or perform a click.</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>☝️ Cursor Control</h3>
+                <p>Simply raise your <strong>Index Finger</strong> to move the mouse cursor across the screen. We use smoothing algorithms to ensure the movement is fluid and jitter-free.</p>
+            </div>
+            <div class="feature-card">
+                <h3>👌 Click Detection</h3>
+                <p>Pinch your <strong>Index Finger</strong> and <strong>Thumb</strong> together to perform a click. The system includes debouncing to prevent accidental double-clicks.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🚀 High Performance</h3>
+                <p>Built with <code>OpenCV</code> and <code>MediaPipe</code>, the system runs efficiently on standard CPUs without needing a dedicated GPU.</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <h2>Quick Start</h2>
+        <p>To run this project on your local machine, run the following commands in your terminal:</p>
+        <pre style="background: #222; padding: 15px; border-radius: 8px; overflow-x: auto;">
+<span style="color: #a6accd">git clone https://github.com/YOUR_USERNAME/virtual-mouse.git</span>
+<span style="color: #a6accd">pip install opencv-python mediapipe pyautogui numpy</span>
+<span style="color: #a6accd">python main.py</span></pre>
+    </div>
+
+    <footer>
+        <p>Developed by <strong>Venkat</strong> | B.Tech Final Year Project</p>
+    </footer>
+
+</body>
+</html>
