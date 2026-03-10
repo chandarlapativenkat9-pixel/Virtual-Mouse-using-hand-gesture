@@ -38,7 +38,7 @@ This project demonstrates the power of Computer Vision in creating touchless int
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/YourUsername/virtual-mouse.git](https://github.com/YourUsername/virtual-mouse.git)
+    git clone [https://github.com/chandarlapativenkat9-pixel/virtual-mouse.git](https://github.com/chandarlapativenkat9-pixel/virtual-mouse.git)
     cd virtual-mouse
     ```
 
